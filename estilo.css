@@ -1,0 +1,63 @@
+header img{
+	width:100%;
+}
+
+
+
+
+.menu ul{
+list-style-type: none;
+margin:0;
+padding:0;
+overflow: hidden;
+background-color: black
+}
+
+.menu li{
+float: left;
+}
+
+.menu li a {
+display: block;
+color:white;
+text-align:center;
+padding:14px 16px;
+text-decoration: none;
+}
+
+.menu li a:hover:not(.active){
+background-color: orange;
+}
+
+.menu.active{
+	background-color: yellow;
+}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
